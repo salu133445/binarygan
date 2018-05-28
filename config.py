@@ -24,7 +24,7 @@ import tensorflow as tf
 
 # Quick setup
 SETUP = {
-    'exp_name': 'test',
+    'exp_name': None,
     # The experiment name. Also the name of the folder that will be created
     # in './exp/' and all the experiment-related files are saved in that
     # folder. None to determine automatically. The automatically-
@@ -32,7 +32,7 @@ SETUP = {
     # dictionary `SETUP`, so remember to provide the experiment name manually
     # (so that you won't overwrite a trained model).
 
-    'training_data': 'herman_mnist_x_binarized',
+    'training_data': 'mnist_x_binarized',
     # Filename of the training data. The training data can be loaded from a npy
     # file in the hard disk or from the shared memory using SharedArray package.
     # Note that the data will be reshaped to (-1, num_bar, num_timestep,
@@ -56,10 +56,10 @@ SETUP = {
     'evaluate_along_training': True,
     # True to run evaluation along the training process. False for nothing.
 
-    'verbose': False,
+    'verbose': True,
     # True to print each batch details to stdout. False to print once an epoch.
 
-    'two_stage_training': True,
+    'two_stage_training': False,
     # True to train the model in a two-stage training setting. False to
     # train the model in an end-to-end manner.
 
@@ -227,8 +227,8 @@ MODEL_CONFIG = {
     'net_r': None,
 
     # Samples
-    'num_sample': 32,
-    'sample_grid': (4, 8),
+    'num_sample': 16,
+    'sample_grid': (4, 4),
 
     # Directories
     'checkpoint_dir': None,
