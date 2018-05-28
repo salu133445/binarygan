@@ -104,6 +104,7 @@ ENV/
 .vscode/*
 
 # Experiments
+/analysis/
 /data/
 /exp/
 logs/
