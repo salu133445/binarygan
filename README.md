@@ -1,6 +1,7 @@
 # BinaryGAN
 
-Generating binarized MNIST digits using Generative Adversarial Networks with Binary Neurons
+Generating binarized MNIST digits using Generative Adversarial Networks with
+Binary Neurons
 
 ## Stochastic and Deterministic Binary Neurons
 
@@ -19,7 +20,9 @@ this work, we consider two types of BNs:
   where &sigma;(&middot;) is the logistic sigmoid function and *U*[0, 1] denotes
   an uniform distribution.
 
-The TensorFlow implementation of binary neurons are
+The implementation of binary neurons are mostly based on the code provided in a
+[blog post](https://r2rt.com/binary-stochastic-neurons-in-tensorflow.html)
+on R2RT blog &mdash; "*Binary Stochastic Neurons in Tensorflow*" [1].
 
 ## Run the code
 
