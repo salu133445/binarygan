@@ -73,6 +73,10 @@ Three GAN training algorithm are examined:
 - **WGAN** &mdash; Wasserstein GAN with weight clipping [3]
 - **WGAN-GP** &mdash; Wasserstein GAN with gradient penalty [4]
 
+Here are some binarized MNIST digits seen in the training data.
+
+![train](figs/train.png)
+
 ### WGAN-GP (Wasserstein GAN with gradient penalty)
 
 #### MLP + DBNs (WGAN-GP)
@@ -88,7 +92,7 @@ Three GAN training algorithm are examined:
 ![mlp_bernoulli](figs/mlp_mlp_bernoulli.png)
 ![mlp_bernoulli](figs/mlp_mlp_bernoulli_preactivated.png)
 
-**Top** &mdash; results (binary-valued predictions)<br>
+**Top** &mdash; results (binary-valued predictions) &emsp;
 **Bottom** &mdash; raw probabilistic predictions
 
 #### MLP with real-valued outputs (WGAN-GP)
@@ -97,8 +101,8 @@ Three GAN training algorithm are examined:
 ![mlp_real](figs/mlp_mlp_real_test_bernoulli.png)
 ![mlp_real](figs/mlp_mlp_real_test_round.png)
 
-**Top** &mdash; results (real-valued predictions)<br>
-**Middle** &mdash; binarized predictions with threshold=0.5<br>
+**Top** &mdash; results (real-valued predictions) &emsp;
+**Middle** &mdash; binarized predictions with threshold=0.5 &emsp;
 **Bottom** &mdash; binarized predictions using Bernoulli sampling
 
 ### GAN (non-sturating GAN)
@@ -108,7 +112,7 @@ Three GAN training algorithm are examined:
 ![gan_mlp_round](figs/gan_mlp_mlp_round.png)
 ![gan_mlp_round](figs/gan_mlp_mlp_round_preactivated.png)
 
-**Top** &mdash; results (binary-valued predictions)<br>
+**Top** &mdash; results (binary-valued predictions) &emsp;
 **Bottom** &mdash; raw probabilistic predictions
 
 #### MLP + SBNs (GAN)
@@ -116,7 +120,7 @@ Three GAN training algorithm are examined:
 ![gan_mlp_bernoulli](figs/gan_mlp_mlp_bernoulli.png)
 ![gan_mlp_bernoulli](figs/gan_mlp_mlp_bernoulli_preactivated.png)
 
-**Top** &mdash; results (binary-valued predictions)<br>
+**Top** &mdash; results (binary-valued predictions) &emsp;
 **Bottom** &mdash; raw probabilistic predictions
 
 ### WGAN (Wesserstein GAN with weight clipping)
@@ -126,7 +130,7 @@ Three GAN training algorithm are examined:
 ![wgan_mlp_round](figs/wgan_mlp_mlp_round.png)
 ![wgan_mlp_round](figs/wgan_mlp_mlp_round_preactivated.png)
 
-**Top** &mdash; results (binary-valued predictions)<br>
+**Top** &mdash; results (binary-valued predictions) &emsp;
 **Bottom** &mdash; raw probabilistic predictions
 
 #### MLP + SBNs (WGAN)
@@ -134,7 +138,7 @@ Three GAN training algorithm are examined:
 ![wgan_mlp_bernoulli](figs/wgan_mlp_mlp_bernoulli.png)
 ![wgan_mlp_bernoulli](figs/wgan_mlp_mlp_bernoulli_preactivated.png)
 
-**Top** &mdash; results (binary-valued predictions)<br>
+**Top** &mdash; results (binary-valued predictions) &emsp;
 **Bottom** &mdash; raw probabilistic predictions
 
 ## References
