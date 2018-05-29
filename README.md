@@ -14,8 +14,9 @@ this work, we consider two types of BNs:
   where **1**<sub>(&middot;)</sub> is the indicator function.
 
 - *Stochastic Binary Neurons* (**SBNs**) binarize a real-valued input *x*
-  according to a probability, defined as *SBN*(*x*) = **1**<sub>*z*<*σ*(*x*)</sub>, *z*~*U*[0, 1], where &sigma;(&middot;) is the logistic sigmoid function and *U*[0, 1] denotes
-  an uniform distribution.
+  according to a probability, defined as *SBN*(*x*) =
+  **1**<sub>*z*<*σ*(*x*)</sub>, *z*~*U*[0, 1], where *σ*(&middot;) is
+   logistic sigmoid function and *U*[0, 1] denotes an uniform distribution.
 
 The implementation of binary neurons are mostly based on the code provided in a
 [blog post](https://r2rt.com/binary-stochastic-neurons-in-tensorflow.html)
@@ -27,17 +28,18 @@ on R2RT blog &mdash; "*Binary Stochastic Neurons in Tensorflow*" [1].
 
 - Download MNIST database by running the script:
     ```sh
-    ./data/download_mnist.sh
+    ./training_data/download_mnist.sh
     ```
 - or download it manually:
     1. Download MNIST database [here](http://yann.lecun.com/exdb/mnist/)
     2. Uncompress all the `.gz` files
-    3. Move the uncompressed files to `data/mnist`
+    3. Move the uncompressed files to `./training_data/mnist`
 
 #### (optional) Store the data to shared memory
 
 ```sh
-python data/load_mnist_to_sa.py ./data/mnist --binary --onehot --merge
+cd ./training_data
+python ./load_mnist_to_sa.py ./mnist --binary --onehot --merge
 ```
 
 ### Configuration
