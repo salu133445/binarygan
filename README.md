@@ -86,7 +86,7 @@ Here are some binarized MNIST digits seen in the training data.
 ![mlp_round](figs/mlp_mlp_round.png)
 ![mlp_round](figs/mlp_mlp_round_preactivated.png)
 
-**Top** &mdash; results (binary-valued predictions)<br>
+**Top** &mdash; results (binary-valued predictions) &emsp;
 **Bottom** &mdash; raw probabilistic predictions
 
 #### MLP + SBNs (WGAN-GP)
