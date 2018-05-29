@@ -71,7 +71,7 @@ python main.py
 
 Three GAN training algorithm are examined:
 
-- **GAN** &mdash; non-sturating GAN [2]
+- **GAN** &mdash; non-saturating GAN [2]
 - **WGAN** &mdash; Wasserstein GAN with weight clipping [3]
 - **WGAN-GP** &mdash; Wasserstein GAN with gradient penalty [4]
 
