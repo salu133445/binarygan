@@ -26,7 +26,8 @@ Modify `config.py` for configuration.
 
 - Quick setup
 
-  Change the values in the dictionary `SETUP` for a quick setup. Documentation is provided right after each key.
+  Change the values in the dictionary `SETUP` for a quick setup. Documentation
+  is provided right after each key.
 
 - More configuration options
 
@@ -34,7 +35,10 @@ Modify `config.py` for configuration.
   `TRAIN_CONFIG` define experiment-, data-, model- and training-related
   configuration variables, respectively.
 
-  > The automatically-determined experiment name is based only on the values defined in the dictionary `SETUP`, so remember to provide the experiment name manually (so that you won't overwrite a trained model).
+  > The automatically-determined experiment name is based only on the values
+defined in the dictionary `SETUP`, so remember to provide the experiment name
+manually when you modify any other configuration variables so that you won't
+overwrite a trained model.
 
 ## Train the model
 
