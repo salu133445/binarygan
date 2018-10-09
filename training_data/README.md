@@ -11,7 +11,7 @@ directory.
 
 ## Load the Training Data to SharedArray
 
-> Make sure SharedArray package is installed.
+> Make sure the SharedArray package has been installed.
 
 Run
 

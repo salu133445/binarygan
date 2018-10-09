@@ -15,6 +15,8 @@
 
 - Store the data to shared memory (optional)
 
+  > Make sure the SharedArray package has been installed.
+
   ```sh
   python ./training_data/load_mnist_to_sa.py ./training_data/mnist/ \
   --merge --binary
