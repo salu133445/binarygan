@@ -4,7 +4,7 @@ NET_D = {}
 
 NET_D['main'] = [
     ('reshape', 784),              # 0
-    ('dense', 512, None, 'lrelu'), # 1
-    ('dense', 256, None, 'lrelu'), # 2
+    ('dense', 512, 'bn', 'lrelu'), # 1
+    ('dense', 256, 'bn', 'lrelu'), # 2
     ('dense', 1),                  # 3
 ]

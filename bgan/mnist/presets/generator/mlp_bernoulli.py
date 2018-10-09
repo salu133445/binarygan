@@ -1,13 +1,12 @@
-"""Network architecture for the generator based on MLPs.
+"""Network architecture for the generator for the proposed model implemented by
+MLPs and SBNs.
 """
 NET_G = {}
 
 NET_G['z_dim'] = 128
 
-NET_G['shared'] = [
-    ('dense', (256), 'bn', 'lrelu'),        # 0
-    ('dense', (512), 'bn', 'lrelu'),        # 1
-    ('dense', (1024), 'bn', 'lrelu'),       # 2
-    ('dense', (784), 'bn', 'bernoulli'),    # 3
-    ('reshape', (28, 28, 1)),               # 4
+NET_G['main'] = [
+    ('dense', (1024), 'bn', 'relu'),     # 0
+    ('dense', (784), 'bn', 'bernoulli'), # 1
+    ('reshape', (28, 28, 1)),            # 2
 ]

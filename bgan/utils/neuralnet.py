@@ -1,5 +1,4 @@
-"""Classes for neural networks and layers.
-"""
+"""Classes for neural networks and layers."""
 import numpy as np
 import tensorflow as tf
 from bgan.utils.ops import binary_stochastic_ST
@@ -71,20 +70,27 @@ class Layer(object):
             return tf.reshape(self.tensor_in, reshape_shape, 'reshape')
 
         # Pooling layers
-        if self.layer_type == 'avgpool2d':
-            return tf.layers.average_pooling2d(self.tensor_in, structure[1][0],
-                                               structure[1][1],
-                                               name='avgpool2d')
-        if self.layer_type == 'maxpool2d':
-            return tf.layers.max_pooling2d(self.tensor_in, structure[1][0],
-                                           structure[1][1], name='maxpool2d')
-        if self.layer_type == 'avgpool3d':
-            return tf.layers.average_pooling3d(self.tensor_in, structure[1][0],
-                                               structure[1][1],
-                                               name='avgpool3d')
-        if self.layer_type == 'maxpool3d':
-            return tf.layers.max_pooling3d(self.tensor_in, structure[1][0],
-                                           structure[1][1], name='maxpool3d')
+        if self.layer_type in ('avgpool2d', 'maxpool2d', 'avgpool3d',
+                               'maxpool3d'):
+            strides = structure[1][1] if len(structure[1]) > 1 else 1
+            padding = structure[1][2] if len(structure[1]) > 2 else 'valid'
+
+            if self.layer_type == 'avgpool2d':
+                return tf.layers.average_pooling2d(
+                    self.tensor_in, structure[1][0], strides, padding,
+                    name='avgpool2d')
+            if self.layer_type == 'maxpool2d':
+                return tf.layers.max_pooling2d(
+                    self.tensor_in, structure[1][0], strides, padding,
+                    name='maxpool2d')
+            if self.layer_type == 'avgpool3d':
+                return tf.layers.average_pooling3d(
+                    self.tensor_in, structure[1][0], strides, padding,
+                    name='avgpool3d')
+            if self.layer_type == 'maxpool3d':
+                return tf.layers.max_pooling3d(
+                    self.tensor_in, structure[1][0], strides, padding,
+                    name='maxpool3d')
 
         # Condition
         if condition is None:

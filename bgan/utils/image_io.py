@@ -18,7 +18,7 @@ def get_image_grid(images, shape, grid_width=0, grid_color=0,
         Width of the grid lines. Default to 0.
     grid_color : int
         Color of the grid lines. Available values are 0 (black) to
-        255 (white). Default to 0.
+        255 (white). Default to 255.
     frame : bool
         True to add frame. Default to False.
 
@@ -44,10 +44,10 @@ def get_image_grid(images, shape, grid_width=0, grid_color=0,
     if frame:
         return np.pad(merged, ((0, grid_width), (0, grid_width), (0, 0)),
                       'constant', constant_values=grid_color)
-    return merged[:-grid_width, :-grid_width]
+    return merged[grid_width:, grid_width:]
 
-def save_image(filepath, phrases, shape, inverted=True, grid_width=3,
-               grid_color=0, frame=True):
+def save_image(filepath, phrases, shape, inverted=False, grid_width=1,
+               grid_color=255, frame=False):
     """
     Save a batch of phrases to a single image grid.
 
@@ -61,38 +61,22 @@ def save_image(filepath, phrases, shape, inverted=True, grid_width=3,
     shape : list or tuple of int
         Shape of the image grid. (height, width)
     inverted : bool
-        True to invert the colors. Default to True.
+        True to invert the colors. Default to False.
     grid_width : int
-        Width of the grid lines. Default to 3.
+        Width of the grid lines. Default to 2.
     grid_color : int
         Color of the grid lines. Available values are 0 (black) to
-        255 (white). Default to 0.
+        255 (white). Default to 255.
     frame : bool
-        True to add frame. Default to True.
+        True to add frame. Default to False.
     """
-    # if phrases.dtype == np.bool_:
-    #     if inverted:
-    #         phrases = np.logical_not(phrases)
-    #     clipped = (phrases * 255).astype(np.uint8)
-    # else:
-    #     if inverted:
-    #         phrases = 1. - phrases
-    #     clipped = (phrases * 255.).clip(0, 255).astype(np.uint8)
-
-    # flipped = np.flip(clipped, 3)
-    # transposed = flipped.transpose(0, 4, 1, 3, 2)
-    # reshaped = transposed.reshape(-1, phrases.shape[1] * phrases.shape[4],
-    #                               phrases.shape[3], phrases.shape[2])
-
-    # merged_phrases = []
-    # phrase_shape = (phrases.shape[4], phrases.shape[1])
-    # for phrase in reshaped:
-    #     merged_phrases.append(get_image_grid(phrase, phrase_shape, 1,
-    #                                          grid_color))
-
     if phrases.dtype == np.bool_:
+        if inverted:
+            phrases = np.logical_not(phrases)
         clipped = (phrases * 255).astype(np.uint8)
     else:
+        if inverted:
+            phrases = 1. - phrases
         clipped = (phrases * 255.).clip(0, 255).astype(np.uint8)
     merged = get_image_grid(clipped, shape, grid_width, grid_color, frame)
     imageio.imwrite(filepath, merged)
