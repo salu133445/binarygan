@@ -15,7 +15,8 @@ intermediate values right before the binarization operation).
 | proposed model with DBNs | proposed model with SBNs |
 |:------------------------:|:------------------------:|
 | <img src="figs/colored_dbn.png" alt="mlp_dbn_prob" style="width:100%; max-width:300px;"> | <img src="figs/colored_sbn.png" alt="mlp_sbn_prob" style="width:100%; max-width:300px;"> |
-<img src="figs/colormap.png" alt="colormap" style="width:100%; max-width:200px; display:block;">
+
+<img src="figs/colormap.png" alt="colormap" style="width:100%; max-width:300px; display:block;">
 
 In order to see how DBNs and SBNs work differently, we compute the histograms of
 their preactivated outputs.
@@ -37,7 +38,7 @@ this model as the _real-valued model_.
 
 | raw prediction | hard thresholding | Bernoulli sampling |
 |:--------------:|:-----------------:|:------------------:|
-| <img src="figs/mlp_real.png" alt="mlp_real" style="width:100%; max-width:300px;"> | <img src="figs/mlp_real_round.png" alt="mlp_round" style="width:100%; max-width:300px;"> | <img src="figs/mlp_real_bernoulli.png" alt="mlp_bernoulli" style="width:100%; max-width:300px;">
+| <img src="figs/mlp_real.png" alt="mlp_real" style="width:100%; max-width:300px;"> | <img src="figs/mlp_real_round.png" alt="mlp_round" style="width:100%; max-width:300px;"> | <img src="figs/mlp_real_bernoulli.png" alt="mlp_bernoulli" style="width:100%; max-width:300px;"> |
 
 We also show the histogram of its probabilistic predictions in the figure above.
 We can see that
