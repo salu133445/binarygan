@@ -14,9 +14,9 @@ intermediate values right before the binarization operation).
 
 | proposed model with DBNs | proposed model with SBNs |
 |:------------------------:|:------------------------:|
-| <img src="figs/colored_dbn.png" alt="mlp_dbn_prob" style="width:100%; max-width:300px;"> | <img src="figs/colored_sbn.png" alt="mlp_sbn_prob" style="width:100%; max-width:300px;"> |
+| <img src="figs/colored_dbn.png" alt="mlp_dbn_prob" style="width:100%; max-width:250px;"> | <img src="figs/colored_sbn.png" alt="mlp_sbn_prob" style="width:100%; max-width:250px;"> |
 
-<img src="figs/colormap.png" alt="colormap" style="width:100%; max-width:300px; display:block;">
+<img src="figs/colormap.png" alt="colormap" style="width:100%; max-width:400px; display:block;">
 
 In order to see how DBNs and SBNs work differently, we compute the histograms of
 their preactivated outputs.
