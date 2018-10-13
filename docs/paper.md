@@ -1,4 +1,4 @@
-# Papers
+# Paper
 
 <b style="font-size:larger;">Training Generative Adversarial Networks with
 Binary Neurons by End-to-end Backpropagation</b><br>
