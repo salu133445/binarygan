@@ -1,3 +1,9 @@
 theme: jekyll-theme-minimal
 title: BinaryGAN
 description: Training GANs with Binary Neurons by Backpropagation
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      type: "default"

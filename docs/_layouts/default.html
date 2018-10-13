@@ -7,6 +7,12 @@
     {% seo %}
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    {% if page.type == 'publication' %}
+      <link rel="stylesheet" href="assests/publication.css">
+    {% endif %}
+
     <meta name="viewport" content="width=device-width">
   </head>
   <body>
@@ -14,16 +20,12 @@
       <header>
         <a href="{{ site.github.url }}"><h1>BinaryGAN</h1></a>
 
-        <p style="color:#222; margin:0 0 5px">
+        <p style="margin-bottom:5px;">
           <a href="https://salu133445.github.io/">Hao-Wen Dong</a>,
           <a href="http://mac.citi.sinica.edu.tw/~yang/">Yi-Hsuan Yang</a>
         </p>
 
-        <p style="color:#222;">
-          Music and AI Lab<br>
-          Research Center for IT Innovation<br>
-          Academia Sinica
-        </p>
+        <p>Music and AI Lab,<br>Research Center for IT Innovation,<br>Academia Sinica</p>
 
         <a class="subpage-link" href="{{ site.github.url }}">Home</a><br>
         <a class="subpage-link" href="abstract">Abstract</a><br>
@@ -31,11 +33,11 @@
         <a class="subpage-link" href="model">Model</a><br>
         <a class="subpage-link" href="data">Training Data</a><br>
         <a class="subpage-link" href="results">Results</a><br>
-        <a class="subpage-link" href="papers">Papers</a><br>
+        <a class="subpage-link" href="paper">Papers</a><br>
 
-        <br><br>
+        <br>
 
-        <p class="view" style="margin:0">View on <a href="https://github.com/salu133445/binarygan">GitHub</a></p>
+        <p class="view" style="margin:0">View on <a href="https://github.com/salu133445/binarygan">GitHub <i class="fab fa-github fa-fw"></i></a></p>
         <p class="view" style="margin:0">Visit <a href="http://musicai.citi.sinica.edu.tw/">Music and AI Lab</a></p>
       </header>
       <section>
