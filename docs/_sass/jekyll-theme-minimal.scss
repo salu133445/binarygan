@@ -265,10 +265,12 @@ footer hr {
     top: 50px;
     z-index: 999;
     display: none;
+    min-width: 120px;
     padding: 10px;
     background: #eee;
   }
-  .main-menu a:hover, .main-menu a:focus, .main-menu-close:hover {
+
+  .main-menu .icon-link:hover, .main-menu .icon-link:focus, .main-menu-close:hover {
     background: #ddd;
   }
 
@@ -277,7 +279,7 @@ footer hr {
     position: absolute;
     right: 5px;
     top: 5px;
-    margin: 5px 10px;
+    padding: 5px 10px;
     cursor: pointer;
   }
 
@@ -365,25 +367,9 @@ footer hr {
   .author-info {
     display: none;
   }
-}
 
-@media print, screen and (max-height: 400px) {
-  .external-links .icon-text {
-    display: none;
-  }
-
-  .external-links .icon-link {
-    display: inline-block;
-  }
-}
-
-@media print, screen and (max-height: 360px) {
-  .subpage-links .icon-text {
-    display: none;
-  }
-
-  .subpage-links .icon-link {
-    display: inline-block;
+  .subpage-links {
+    margin: 0;
   }
 }
 
