@@ -1,8 +1,12 @@
+---
+type: "publication"
+---
+
 # Paper
 
 <b style="font-size:larger;">Training Generative Adversarial Networks with
 Binary Neurons by End-to-end Backpropagation</b><br>
-__Hao-Wen Dong__ and Yi-Hsuan Yang<br>
+Hao-Wen Dong and Yi-Hsuan Yang<br>
 _arXiv Preprint arXiv:1810.04714_, 2018.<br>
 {% include icon_link.html text="website" icon="fas fa-globe-asia" href="https://salu133445.github.io/binarygan" %}
 {% include icon_link.html text="arxiv" icon="fas fa-archive" href="http://arxiv.org/abs/1810.04714" %}
