@@ -37,7 +37,7 @@ backward pass, we can then train the whole network with back propagation.
 
 ## References
 
-1. Binary Stochastic Neurons in Tensorflow, 2016.
+1. Silviu Pitis, "Binary Stochastic Neurons in Tensorflow," 2016.
    Blog post on R2RT blog. &nbsp;
    {% include icon_link.html text="link" icon="fas fa-globe-asia" href="https://r2rt.com/binary-stochastic-neurons-in-tensorflow.html" %}
 
@@ -49,5 +49,5 @@ backward pass, we can then train the whole network with back propagation.
 3. Geoffrey Hinton,
    "Neural networks for machine learning - using noise as a regularizer (lecture
    9c)", 2012.
-   Coursera, video lectures. &nbsp;
+   Coursera, video lecture. &nbsp;
    {% include icon_link.html text="video" icon="fab fa-youtube" href="https://www.coursera.org/lecture/neural-networks/using-noise-as-a-regularizer-7-min-wbw7b" %}
