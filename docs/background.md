@@ -41,7 +41,7 @@ backward pass, we can then train the whole network with back propagation.
    Blog post on R2RT blog. &nbsp;
    {% include icon_link.html text="link" icon="fas fa-globe-asia" href="https://r2rt.com/binary-stochastic-neurons-in-tensorflow.html" %}
 
-2. Yoshua Bengio, Nicholas Léonard and Aaron C. Courville,
+2. Yoshua Bengio, Nicholas Léonard, and Aaron C. Courville,
    "Estimating or propagating gradients through stochastic neurons for
    conditional computation,"
    _arXiv preprint arXiv:1308.3432_, 2013.
