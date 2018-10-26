@@ -48,7 +48,7 @@ footer {
   color: #111;
 }
 
-.author-info {
+.author-names {
   margin: 0 0 5px;
 }
 
@@ -85,7 +85,7 @@ footer {
 
 // Special classes
 .caption {
-  margin: 0 0 -15px;
+  margin: -15px 0 0;
   text-align: center
 }
 
@@ -320,7 +320,7 @@ footer hr {
     padding: 0 50px 0 0;
   }
 
-  .external-links .icon-text {
+  .author-info, .external-links .icon-text {
     display: none;
   }
 
@@ -388,7 +388,7 @@ footer hr {
 }
 
 @media print, screen and (max-height: 500px) {
-  .job-info {
+  .author-info {
     display: none;
   }
 }
