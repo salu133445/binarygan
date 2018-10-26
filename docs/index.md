@@ -13,6 +13,3 @@ and network architectures. Although the results are still preliminary, we show
 that it is possible to train a GAN that has binary neurons and that the use of
 gradient estimators can be a promising direction for modeling discrete
 distributions with GANs.
-
-For reproducibility, the source code is available
-[here](https://github.com/salu133445/binarygan).
