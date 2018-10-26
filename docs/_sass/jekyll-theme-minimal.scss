@@ -39,10 +39,6 @@ footer {
   display: none;
 }
 
-.main-menu a {
-  display: block;
-}
-
 // Header
 .title a {
   color: #111;
@@ -268,26 +264,9 @@ footer hr {
     top: 50px;
     z-index: 999;
     display: none;
-    padding: 5px;
-  }
-
-  .main-menu div {
-    min-height: 100%;
+    padding: 10px;
     background: #eee;
   }
-
-  .subpage-links {
-    padding: 40px 0 0;
-  }
-
-  .external-links {
-    padding: 0;
-  }
-
-  .main-menu a {
-    padding: 8px 10px;
-  }
-
   .main-menu a:hover, .main-menu a:focus, .main-menu-close:hover {
     background: #ddd;
   }
@@ -299,6 +278,14 @@ footer hr {
     top: 5px;
     padding: 5px 10px;
     cursor: pointer;
+  }
+
+  .subpage-links {
+    padding: 0;
+  }
+
+  .icon-link {
+    padding: 2px;
   }
 
   #main-menu-checkbox:checked ~ .main-menu {
@@ -320,7 +307,7 @@ footer hr {
     padding: 0 50px 0 0;
   }
 
-  .author-info, .external-links .icon-text {
+  .author-info {
     display: none;
   }
 
@@ -378,18 +365,18 @@ footer hr {
 }
 
 @media print, screen and (max-height: 600px) {
+  .author-info {
+    display: none;
+  }
+}
+
+@media print, screen and (max-height: 400px) {
   .external-links .icon-text {
     display: none;
   }
 
   .external-links .icon-link {
     display: inline-block;
-  }
-}
-
-@media print, screen and (max-height: 500px) {
-  .author-info {
-    display: none;
   }
 }
 

@@ -21,5 +21,5 @@ backpropagation.
 Here is the system diagram for the proposed model implemented by multilayer
 perceptrons (MLPs)
 
-<img src="figs/system.png" alt="system" style="width:100%; max-width:600px; display:block;">
+![system](figs/system.png)
 <p class="caption">Sample diagram</p>

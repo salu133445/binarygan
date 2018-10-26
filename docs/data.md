@@ -11,5 +11,5 @@ Specifically, we
 The following figure shows some sample binarized MNIST digits seen in our
 training data.
 
-<img src="figs/train.png" alt="training_data" style="width:100%; max-width:600px; display:block;">
+![training_data](figs/train.png)
 <p class="caption">Sample binarized MNIST digits</p>
