@@ -1,7 +1,5 @@
 # Data
 
-## Binarized MNIST Database
-
 We use the binarized version of the MNIST handwritten digit database.
 Specifically, we
 

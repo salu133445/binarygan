@@ -16,7 +16,7 @@ intermediate values right before the binarization operation).
 |:------------------------:|:------------------------:|
 | <img src="figs/colored_dbn.png" alt="mlp_dbn_prob" style="max-width:250px;"> | <img src="figs/colored_sbn.png" alt="mlp_sbn_prob" style="max-width:250px;"> |
 
-<img src="figs/colormap.png" alt="colormap" style="max-width:400px;">
+<img src="figs/colormap.png" alt="colormap" style="max-width:300px;">
 
 In order to see how DBNs and SBNs work differently, we compute the histograms of
 their preactivated outputs.

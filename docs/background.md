@@ -8,12 +8,12 @@ this work, we consider two types of BNs:
 - _Deterministic Binary Neurons_ (DBNs) act like neurons with hard thresholding
   functions as their activation functions. We define the output of a DBN for a
   real-valued input _x_ as:
-  <img src="figs/formula_dbn.png" alt="formula_dbn" style="wdith:auto; max-height:30px;">
+  <img src="figs/formula_dbn.png" alt="formula_dbn" style="width:auto; max-height:40px;">
   where __1__<sub>(&middot;)</sub> is the indicator function.
 
 - _Stochastic Binary Neurons_ (SBNs) binarize a real-valued input _x_ according
   to a probability, defined as:
-  <img src="figs/formula_sbn.png" alt="formula_sbn" style="wdith:auto; max-height:30px;">
+  <img src="figs/formula_sbn.png" alt="formula_sbn" style="width:auto; max-height:40px;">
   where &sigma;(&middot;) is the logistic sigmoid function and _U_[0, 1] denotes
   an uniform distribution.
 
