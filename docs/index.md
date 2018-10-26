@@ -1,6 +1,6 @@
 <img src="figs/colored_dbn.png" alt="mlp_dbn_prob" style="max-width:200px; display:inline-block;"/>
 
-[BinaryGAN](https://salu133445.github.io/binarygan) is a novel generative
+[BinaryGAN](https://salu133445.github.io/binarygan/) is a novel generative
 adversarial network (GAN) that uses binary neurons at the output layer of the
 generator. We employ the sigmoid-adjusted straight-through estimators to
 estimate the gradients for the binary neurons and train the whole network by
