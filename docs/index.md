@@ -1,4 +1,7 @@
-<img src="figs/colored_dbn.png" alt="mlp_dbn_prob" style="max-width:200px; display:inline-block;"/>
+<p class="switch-on-hover">
+  <img class="hide-on-hover" src="figs/colored_dbn.png" alt="colored_dbn" style="max-width:200px;"/>
+  <img class="show-on-hover" src="figs/colored_sbn.png" alt="colored_sbn" style="max-width:200px;"/>
+</p>
 
 [BinaryGAN](https://salu133445.github.io/binarygan/) is a novel generative
 adversarial network (GAN) that uses binary neurons at the output layer of the
